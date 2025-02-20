@@ -1,0 +1,14 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/subdomains/gritwell-api/
+file_exists_behavior: OVERWRITE
+hooks:
+  AfterInstall:
+    - location: pipelines/integrations-deployment-pre-post.sh
+      runas: root
+      mode: 644
+      owner: root
+      type:
+         - file

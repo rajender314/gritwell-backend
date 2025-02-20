@@ -1,0 +1,43 @@
+export interface ICustomers {
+    'id': string;
+    'first_name': string;
+    'last_name': string;
+    'email': string;
+    'phone': string;
+    'gwc_client_id': string;
+    'address': string;
+    'dob': string;
+    'age': number;
+    'ethnicity': string;
+    'gender': string;
+    'height': string;
+    'weight': string;
+    'state': string;
+    'hc_assigned': boolean;
+    'md_assigned': boolean;
+    'client_msq': boolean;
+    'client_intake': boolean;
+    'client_past_test': boolean;
+    'intake_submitted': boolean;
+    'symptom_analysis_submitted': boolean;
+    'stripe_subscription_id': string;
+    'subscription_status': string;
+    'subscription_start_date':Date;
+    'subscription_end_date':Date;
+    'subscription_plan_id': string;
+    'location':string;
+    'language':string;
+    'img_name': string;
+    'display_url': string;
+    'assignment_details': any;
+    'active_health_plan':any;
+    'draft_health_plan':any;
+    'next_visit':any;
+    'last_visit':any;
+    'goals':any;
+    'todo_list_dueDate':Date;
+    'appointments_count':any;
+    'payments_count':any;
+    'current_health_journey_status': string;
+
+}
